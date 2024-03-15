@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b49ccde-2e35-4387-8ae9-d9ae7fc712bd" name="Changes" comment="first mark">
-      <change afterPath="$PROJECT_DIR$/lab1.4/ip_gen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1.5/10.31.172.7_DEMO_SW_4.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1.5/10.31.69.201_demo01-615a.csr.jet.msk.su.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1.5/10.31.69.202_demo02-615a.csr.jet.msk.su.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1.5/10.31.69.203_demo03-615a.csr.jet.msk.su.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1.5/10.31.70.209_csr-api.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1.5/10.31.71.65_AR-1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1.5/config_parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +32,9 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="a3a0919d-013f-4407-b116-5424158a921c" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -37,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.config_parser.executor": "Run",
     "Python.data_analysis.executor": "Run",
     "Python.hello.executor": "Run",
     "Python.ip_gen.executor": "Run",
@@ -55,11 +65,35 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ov.lyalin\PycharmProjects\p4ne\lab1.5" />
       <recent name="C:\Users\ov.lyalin\PycharmProjects\p4ne" />
       <recent name="C:\Users\ov.lyalin\PycharmProjects\p4ne\lab1.2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ip_gen">
+  <component name="RunManager" selected="Python.config_parser">
+    <configuration name="config_parser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="p4ne" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab1.5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab1.5/config_parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="data_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="p4ne" />
       <option name="ENV_FILES" value="" />
@@ -154,6 +188,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.config_parser" />
         <item itemvalue="Python.ip_gen" />
         <item itemvalue="Python.data_analysis" />
         <item itemvalue="Python.hello" />
@@ -177,7 +212,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710170091635</updated>
       <workItem from="1710170095077" duration="10419000" />
-      <workItem from="1710427272930" duration="1042000" />
+      <workItem from="1710427272930" duration="7852000" />
     </task>
     <task id="LOCAL-00001" summary="first lab">
       <option name="closed" value="true" />
@@ -203,7 +238,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710335887682</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first mark">
+      <option name="closed" value="true" />
+      <created>1710428355288</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710428355288</updated>
+    </task>
+    <task id="LOCAL-00005" summary="first mark">
+      <option name="closed" value="true" />
+      <created>1710428375303</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710428375304</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +277,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="first mark" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/p4ne$ip_gen.coverage" NAME="ip_gen Coverage Results" MODIFIED="1710427842573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1.4" />
+    <SUITE FILE_PATH="coverage/p4ne$config_parser.coverage" NAME="config_parser Coverage Results" MODIFIED="1710515943038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1.5" />
+    <SUITE FILE_PATH="coverage/p4ne$ip_gen.coverage" NAME="ip_gen Coverage Results" MODIFIED="1710428991753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1.4" />
     <SUITE FILE_PATH="coverage/p4ne$data_analysis.coverage" NAME="data_analysis Coverage Results" MODIFIED="1710331854262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1.2" />
     <SUITE FILE_PATH="coverage/p4ne$hello.coverage" NAME="hello Coverage Results" MODIFIED="1710331306360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1.1" />
     <SUITE FILE_PATH="coverage/p4ne$lab1_2_script.coverage" NAME="lab1.2_script Coverage Results" MODIFIED="1710329913326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1.2" />
