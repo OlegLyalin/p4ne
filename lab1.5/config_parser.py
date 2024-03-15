@@ -17,7 +17,7 @@ for current_file_name in glob.glob("*.log"):
                 match = ip_pattern.search(current_line)
                 if match:
                     # Если найдено соответствие, формируем строку с IP-адресом и маской и добавляем в множество.
-                    ip_and_mask = f"{match.group(1)}/{match.group(2)}"
+                    ip_and_mask = f"{match.group(1)} -- {match.group(2)}"
                     set_of_ip.add(ip_and_mask)
     except IOError as e:
         print(f"Не удалось открыть файл {current_file_name}: {e}")
