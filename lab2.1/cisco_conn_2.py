@@ -1,12 +1,11 @@
 import requests
 from requests.auth import HTTPBasicAuth
-import json
 
 # Отключаем предупреждения о непроверенных SSL сертификатах
 requests.packages.urllib3.disable_warnings()
 
 # Данные для подключения
-url = "https://10.31.70.209/restconf/data/ietf-interfaces:interfaces"
+base_url = "https://10.31.70.209/restconf/data/"
 username = "restapi"
 password = "j0sg1280-7@"
 
@@ -16,6 +15,9 @@ headers = {
     'Content-Type': 'application/yang-data+json'
 }
 
+# URL для получения состояния всех интерфейсов
+url = f"{base_url}ietf-interfaces:interfaces-state"
+
 # Отправка запроса
 response = requests.get(url, auth=HTTPBasicAuth(username, password), headers=headers, verify=False)
 
@@ -23,16 +25,15 @@ response = requests.get(url, auth=HTTPBasicAuth(username, password), headers=hea
 if response.status_code == 200:
     # Разбор ответа и вывод информации об интерфейсах
     interfaces_data = response.json()
-    for interface in interfaces_data['ietf-interfaces:interfaces']['interface']:
-        print(f"Interface: {interface['name']}")
-        print(f"  Type: {interface.get('type', 'N/A')}")
-        print(f"  Enabled: {interface.get('enabled', 'N/A')}")
-        if 'statistics' in interface:
-            stats = interface['statistics']
-            print(f"  Packets Received: {stats.get('in-unicast-pkts', 'N/A')}")
-            print(f"  Packets Sent: {stats.get('out-unicast-pkts', 'N/A')}")
-            print(f"  Bytes Received: {stats.get('in-octets', 'N/A')}")
-            print(f"  Bytes Sent: {stats.get('out-octets', 'N/A')}")
-        print("-" * 20)
+    if 'interface' in interfaces_data['ietf-interfaces:interfaces-state']:
+        for interface in interfaces_data['ietf-interfaces:interfaces-state']['interface']:
+            print(f"Interface: {interface['name']}")
+            if 'statistics' in interface:
+                stats = interface['statistics']
+                print(f"  Packets Received: {stats.get('in-unicast-pkts', 'N/A')}")
+                print(f"  Packets Sent: {stats.get('out-unicast-pkts', 'N/A')}")
+                print(f"  Bytes Received: {stats.get('in-octets', 'N/A')}")
+                print(f"  Bytes Sent: {stats.get('out-octets', 'N/A')}")
+            print("-" * 20)
 else:
     print("Failed to retrieve data:", response.status_code)
